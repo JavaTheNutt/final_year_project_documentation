@@ -9,7 +9,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "appendix": "node docs/design_docs/snippets/appendix",
-    "header": "node docs/design_docs/snipptes/header",
+    "header": "node docs/design_docs/snippets/header",
     "buildDoc": "npm run header && npm run appendix && node docs/design_docs"
   },
   "repository": {
