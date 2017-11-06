@@ -7,7 +7,10 @@
     "doc": "docs"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "appendix": "node docs/design_docs/snippets/appendix",
+    "header": "node docs/design_docs/snipptes/header",
+    "buildDoc": "npm run header && npm run appendix && node docs/design_docs"
   },
   "repository": {
     "type": "git",
@@ -22,6 +25,7 @@
   "homepage": "https://github.com/JavaTheNutt/final_year_project_documentation#readme",
   "dependencies": {
     "lodash": "^4.17.4",
+    "ncp": "^2.0.0",
     "xml2json": "^0.11.0"
   }
 }

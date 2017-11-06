@@ -15,7 +15,7 @@ const fetchSources   = () => fs.readFileSync('C:\\Users\\joewe\\AppData\\Roaming
 const convertSources = () => parser.toJson(fetchSources(), {object: true})['b:Sources']['b:Source'];
 const mapSources     = sources => sources.map(source => mapReference(source));
 const generateMarkdown = mappedReferences => mappedReferences.map(reference => reference.url ? generateWebsiteMarkdown(reference) : generateNonWebsiteMarkdown(reference));
-const writeReferenceFile = () => fs.writeFileSync(path.join(__dirname, 'references01.md'),['# References', generateMarkdown(mapSources(convertSources())).join(' ')].join(' '));
+const writeReferenceFile = () => fs.writeFileSync(path.join(__dirname, 'references01.md'),['# References', generateMarkdown(sortReferences(mapSources(convertSources()))).join(' ')].join(' '));
 const mapReference = src => {
   'use strict';
   const reference = {};
@@ -78,6 +78,11 @@ const mapCorporate   = author => {
         author['b:Corporate'].substring(0, author['b:Corporate'].indexOf('(') - 1)
   }
 };
+const sortReferences = references => references.sort((elem1, elem2)=>{
+  'use strict';
+  if(elem1.citation < elem2.citation) return -1;
+  return 1
+});
 const generateWebsiteMarkdown = reference => {
   'use strict';
   console.log(`attempting to generate website markdown for ${JSON.stringify(reference)}`);
@@ -116,3 +121,4 @@ const generateNonWebsiteMarkdown = reference => {
 //console.log(JSON.stringify());
 writeReferenceFile();
 concatFiles(__dirname, fileNames, 'README.md');
+
