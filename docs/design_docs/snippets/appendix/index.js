@@ -2,7 +2,7 @@ const fs     = require('fs');
 const path   = require('path');
 const parser = require('xml2json');
 
-const fileNames = ['figures'];
+const fileNames = ['figures', 'references01'];
 
 const concatFiles = (dirname, fileNames, outputFile) => fs.writeFileSync(path.join(dirname, outputFile), readFiles(mapFiles(dirname, fileNames)).
 join('  '));
@@ -115,4 +115,4 @@ const generateNonWebsiteMarkdown = reference => {
 
 //console.log(JSON.stringify());
 writeReferenceFile();
-//concatFiles(__dirname, fileNames, 'README.md');
+concatFiles(__dirname, fileNames, 'README.md');
