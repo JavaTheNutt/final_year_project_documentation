@@ -14,13 +14,16 @@ const mapFiles = (dirname, files) => files.map(fileName => `${path.join(dirname,
 const fetchSources   = () => fs.readFileSync('C:\\Users\\joewe\\AppData\\Roaming\\Microsoft\\Bibliography\\Sources.xml');
 const convertSources = () => parser.toJson(fetchSources(), {object: true})['b:Sources']['b:Source'];
 const mapSources     = sources => sources.map(source => mapReference(source));
+const generateMarkdown = mappedReferences => mappedReferences.map(reference => reference.url ? generateWebsiteMarkdown(reference) : generateNonWebsiteMarkdown(reference));
+const writeReferenceFile = () => fs.writeFileSync(path.join(__dirname, 'references01.md'),['# References', generateMarkdown(mapSources(convertSources())).join(' ')].join(' '));
 const mapReference = src => {
   'use strict';
   const reference = {};
   Object.assign(reference, addYear(src, mapAuthor(src['b:Author']['b:Author'])));
   console.log(`reference is now ${JSON.stringify(reference)}`);
-  Object.assign(reference, mapGenericProperties(reference));
+  Object.assign(reference, mapGenericProperties(src));
   Object.assign(reference, (src['b:SourceType'] === 'DocumentFromInternetSite'|| src['b:SourceType'] === 'InternetSite')? mapWebsiteProperties(src): mapPublisherProperties(src));
+  console.log(`assigned reference: ${JSON.stringify(reference)}`);
   return reference;
 };
 const addYear = (oldRecord, newRecord) => {
@@ -31,9 +34,11 @@ const addYear = (oldRecord, newRecord) => {
 };
 const mapGenericProperties = record => {
   'use strict';
+  console.log(`attempting to add generic properties from ${JSON.stringify(record)}`);
   return {
     type: record['b:SourceType'],
-    title: record['b:Title']
+    title: record['b:Title'],
+    year: record['b:Year']
   }
 };
 const mapPublisherProperties = record => {
@@ -73,5 +78,41 @@ const mapCorporate   = author => {
         author['b:Corporate'].substring(0, author['b:Corporate'].indexOf('(') - 1)
   }
 };
-console.log(JSON.stringify(mapSources(convertSources())));
+const generateWebsiteMarkdown = reference => {
+  'use strict';
+  console.log(`attempting to generate website markdown for ${JSON.stringify(reference)}`);
+  return `
+  
+  ## ${reference.citation}
+  
+  Author: ${reference.name}
+  
+  Year: ${reference.year}
+  
+  Title: ${reference.title}
+  
+  URL: ${reference.url}
+  
+  Accessed On: ${reference.accessed}
+  `
+};
+const generateNonWebsiteMarkdown = reference => {
+  'use strict';
+  console.log(`attempting to generate non website markdown for ${JSON.stringify(reference)}`);
+  return `
+  
+  ## ${reference.citation}
+  
+  Author: ${reference.name}
+  
+  Year: ${reference.year}
+  
+  Title: ${reference.title}
+  
+  Publisher: ${reference.publisher}
+  `
+};
+
+//console.log(JSON.stringify());
+writeReferenceFile();
 //concatFiles(__dirname, fileNames, 'README.md');
