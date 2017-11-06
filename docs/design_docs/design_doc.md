@@ -32,7 +32,7 @@ This is a very broad, high-level overview of what this project aims to achieve, 
 
 > The overarching goal of this project is to provide an **easy to use** service that allows users to manage their household resources and processes.
 
-For the system to be considered a success, it must be easily usable by everyone. The UI must be simple enough that anyone can grasp, as well as accessible for people with disabilities. The underlying data structures must be flexible enough to deal with changing user requirements, as well as adaptable household processes. Application flow must also be flexible to help with user experience. An application that feels rigid is never conducive to good UX.
+For the system to be considered a success, it must be easily usable by everyone. The UI must be simple enough that anyone can grasp, as well as accessible for people with disabilities. The underlying data structures must be flexible enough to deal with changing user requirements, as well as adaptable household processes. Application flow must also be flexible to help with user experience. An application that feels rigid is never conducive to good UX(\[Nagy, 2015\]( https://github.com/JavaTheNutt/final\_year\_project\_documentation/blob/master/docs/design\_docs/README.md\#nagy-j-2015)).
 
 > The overarching goal of this project is to provide an easy to use service that allows **users** to manage their household resources and processes.
 
@@ -78,13 +78,13 @@ It is highly unlikely that there will be time to implement all of these feature 
 
 # Methodologies
 
-With the way the year is broken down, Semester One for analysis and Semester Two for development, the most obvious methodology for building this project would be the Waterfall Method. I am reluctant to use this method however, since it has a reputation for being very inflexible. Since this project will have constantly changing requirements, a more iterative approach is needed.
+With the way the year is broken down, Semester One for analysis and Semester Two for development, the most obvious methodology for building this project would be the Waterfall Method. I am reluctant to use this method however, since it has a reputation for being very inflexible(\[ExpertsExchange, 2014\]( https://github.com/JavaTheNutt/final\_year\_project\_documentation/blob/master/docs/design\_docs/README.md\#expertsexchange-2014)). Since this project will have constantly changing requirements, a more iterative approach is needed.
 
-The most common implementations of Agile, such as SCRUM and Kanban, are also not possible for this project, since I will be working solo on it. Most Agile implementation is very team oriented, thus making it unsuitable for solo developers.
+The most common implementations of Agile, such as SCRUM(\[ScrumGuides, 2016\]( https://github.com/JavaTheNutt/final\_year\_project\_documentation/blob/master/docs/design\_docs/README.md\#expertsexchange-2014)) and Kanban(\[LEANKit, 2017\]( https://github.com/JavaTheNutt/final\_year\_project\_documentation/blob/master/docs/design\_docs/README.md\#leankit-2017)), are also not possible for this project, since I will be working solo on it. Most Agile implementation is very team oriented, thus making it unsuitable for solo developers.
 
-Since neither Waterfall nor true Agile is possible, I decided to go with a hybrid approach. I will use the first 12-week period as requirements gathering and definition, while working on building a prototype. I plan on following Agile principals while developing this prototype, such as Test Driven Development(TDD)/ Behaviour Driven Development(BDD), LEAN , CI/CD.
+Since neither Waterfall nor true Agile is possible, I decided to go with a hybrid approach. I will use the first 12-week period as requirements gathering and definition, while working on building a prototype. I plan on following Agile principals while developing this prototype, such as Test Driven Development(TDD)/ Behaviour Driven Development(BDD)(\[Wilcox, 2017\]( https://github.com/JavaTheNutt/final\_year\_project\_documentation/blob/master/docs/design\_docs/README.md\#wilcox-r-2017)), LEAN (\[Ambler, 2016\]( https://github.com/JavaTheNutt/final\_year\_project\_documentation/blob/master/docs/design\_docs/README.md\#ambler-s-2016)), CI/CD(\[Pittet, 2017\]( https://github.com/JavaTheNutt/final\_year\_project\_documentation/blob/master/docs/design\_docs/README.md\#pittet-s-2017)).
 
-The prototype will hopefully be able to serve as a LEAN Minimum Viable Product(MVP) that can be used for beta testing. This prototype will also act as a Technical Feasibility Check for the project, where I will test out the technical specifications of the languages and frameworks that I plan to use.
+The prototype will hopefully be able to serve as a LEAN Minimum Viable Product(MVP) (\[TheLeanStartup, 2017\]( https://github.com/JavaTheNutt/final\_year\_project\_documentation/blob/master/docs/design\_docs/README.md\#theleanstartup-2017))that can be used for beta testing. This prototype will also act as a Technical Feasibility Check for the project, where I will test out the technical specifications of the languages and frameworks that I plan to use.
 
 The second half of the year will be given over to development. Since it will only be a 12-week period to get the final product built and deployed, sprint cycles will have to be kept short and fast. In conjunction with LEAN principals, paperwork that does not directly add value to the project is considered waste, and must be eliminated as much as possible. This means that reports and documentation that accompany this project must be concise and succinct to minimise time wastage.
 
@@ -98,7 +98,7 @@ I also hope to get a Continuous Integration (CI) solution in place for the proto
 
 ## Functional Areas
 
-One of the first tasks of any software project is to define a set of functional requirements. Functional requirements define the functionality, or behaviour, of a system. . The goal of the project can be summed up as:
+One of the first tasks of any software project is to define a set of functional requirements. Functional requirements define the functionality, or behaviour, of a system. (\[Weigers, 2003\](https://github.com/JavaTheNutt/final\_year\_project\_documentation/blob/master/docs/design\_docs/README.md\#weigers-k-2003)). The goal of the project can be summed up as:
 
 *The overarching goal of this project is to provide an easy to use service that allows users to manage their household resources and processes.*
 
@@ -248,7 +248,7 @@ For the application layer, the two major technologies I am considering are Java 
 
 #### Firebase
 
-I am also strongly considering Firebase integration into the project. Firebase is a solution that is generally used to provide server functionality to a client without the need for server-side code. It allows a client to read/write directly to a database, without server intervention. It also provides client-side file storage to allow users to save and retrieve files without the need for a separate server. Firebase also provides free hosting for static websites, served from a distributed Google infrastructure, served over SSL, with support for free SSL certs on custom domains too.
+I am also strongly considering Firebase integration into the project. Firebase is a solution that is generally used to provide server functionality to a client without the need for server-side code. It allows a client to read/write directly to a database, without server intervention. It also provides client-side file storage to allow users to save and retrieve files without the need for a separate server. Firebase also provides free hosting for static websites, served from a distributed Google infrastructure, served over SSL, with support for free SSL certs on custom domains too. (\[Google (A), 2017\](https://github.com/JavaTheNutt/final\_year\_project\_documentation/blob/master/docs/design\_docs/README.md\#google-a-2017))
 
 ##### Client-Side Database
 
@@ -256,11 +256,11 @@ Firebase provides two options for Real-Time data access, Real-Time Database and 
 
 ###### Real-Time Database
 
-This is the original Firebase Database offering. It is a simple key value store which allows data to be structured in a tree fashion. There is no true querying, instead event listeners are attached to a particular key, and a deep watch is maintained on the data stored below that tree. This is a very attractive method for storing hard and fast values that are often changed externally. It would also be very useful when dealing with a component based client, as a listener attached to a small section of data could be attached to a component, and only be active while the component is active.
+This is the original Firebase Database offering. It is a simple key value store which allows data to be structured in a tree fashion. There is no true querying, instead event listeners are attached to a particular key, and a deep watch is maintained on the data stored below that tree. (\[Google (E), 2017\](https://github.com/JavaTheNutt/final\_year\_project\_documentation/blob/master/docs/design\_docs/README.md\#google-e-2017)) This is a very attractive method for storing hard and fast values that are often changed externally. It would also be very useful when dealing with a component based client, as a listener attached to a small section of data could be attached to a component, and only be active while the component is active.
 
 ###### Cloud Firestore
 
-Cloud Firestore is the newest data solution offered by Firebase (04/11/17 its still in Beta). It acts more as a collection based database (structured like MongoDB) where the client app can store *documents* in *collections.* From the documentation it appears that this database would act like a Mongo database wrapped in a GraphQL server. So the server is specifically set up to perform deep queries on JSON collections. This provides a more robust method of querying, but at the expense of not being able to add listeners to a specific data set.
+Cloud Firestore is the newest data solution offered by Firebase (04/11/17 its still in Beta). It acts more as a collection based database (structured like MongoDB) where the client app can store *documents* in *collections.* From the documentation it appears that this database would act like a Mongo database wrapped in a GraphQL server. So the server is specifically set up to perform deep queries on JSON collections. This provides a more robust method of querying, but at the expense of not being able to add listeners to a specific data set. (\[Google (F), 2017\](https://github.com/JavaTheNutt/final\_year\_project\_documentation/blob/master/docs/design\_docs/README.md\#google-f-2017))
 
 ###### Chosen Solution
 
@@ -270,13 +270,13 @@ Since Firestore appears to act as a REST API (or, rather a GraphQL server), I fe
 
 ##### Cloud Functions
 
-Firebase also provides a service called Cloud Functions. These are small NodeJS scripts that can be attached to events within the Firebase ecosystem. For instance, when a user signs up, a custom function can be run, perhaps sending a verification email to the user. There are a large selection of events that can be listened for, such as writes to a specific database node, or a user asking to reset their password.
+Firebase also provides a service called Cloud Functions. These are small NodeJS scripts that can be attached to events within the Firebase ecosystem. For instance, when a user signs up, a custom function can be run, perhaps sending a verification email to the user. There are a large selection of events that can be listened for, such as writes to a specific database node, or a user asking to reset their password.(\[Google (D), 2017\](https://github.com/JavaTheNutt/final\_year\_project\_documentation/blob/master/docs/design\_docs/README.md\#google-d-2017))
 
 ##### Authentication
 
-The main attraction of Firebase is its authentication module. Firebase provides both client and server API’s for authentication. This method of authentication would allow the client app to authenticate with Firebase using an email/password combo, or a third party Authentication provider. Firebase then handles all local authentication through a combination of browser cookies and WebSocket connections. When the client needs to make a request to the server, it can fetch a JSON Web Token (JWT) from Firebase to be attached to the request headers.
+The main attraction of Firebase is its authentication module. Firebase provides both client and server API’s for authentication. This method of authentication would allow the client app to authenticate with Firebase using an email/password combo, or a third party Authentication provider. Firebase then handles all local authentication through a combination of browser cookies and WebSocket connections. When the client needs to make a request to the server, it can fetch a JSON Web Token (JWT) from Firebase to be attached to the request headers. (\[Google (B), 2017\](https://github.com/JavaTheNutt/final\_year\_project\_documentation/blob/master/docs/design\_docs/README.md\#google-b-2017))
 
-On the server, Firebase provide an API to validate and edit the claims attached to the JWT. This will allow the server to tell Firebase what data should be included in the next token that is issued to the client. The server can then verify that the request can from a valid user, and which user made the request.
+On the server, Firebase provide an API to validate and edit the claims attached to the JWT. This will allow the server to tell Firebase what data should be included in the next token that is issued to the client. The server can then verify that the request can from a valid user, and which user made the request. (\[Google (C), 2017\](https://github.com/JavaTheNutt/final\_year\_project\_documentation/blob/master/docs/design\_docs/README.md\#google-c-2017))
 
 This means that on the client side, I can abstract the details 0f dealing with various Authentication API’s (such as different OAuth Bearer Tokens from different API’s) into a single API which provides some powerful functionality on both the client-side(such as the wrapper for storing an authentication cookie to allow users to remain logged in between browser sessions) and server-side(such as the ability to add custom information to the Bearer Tokens to prevent unnecessary database reads on every request) API’s.
 
