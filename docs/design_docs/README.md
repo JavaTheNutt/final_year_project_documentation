@@ -7,34 +7,34 @@ Joe Wemyss | 20068336 | joe.wemyss@javathenutt.com
 
 
   
-[//]: # (base path https://github.com/JavaTheNutt/final_year_project_documentation/blob/master/docs/design_docs/design_doc.md)
+[//]: # (base path https://github.com/JavaTheNutt/final_year_project_documentation/blob/master/docs/design_docs/README.md)
 
 ## Contents
-* [Project Goal](https://github.com/JavaTheNutt/final_year_project_documentation/blob/master/docs/design_docs/design_doc.md#project-goal)
-    * [Motivation](https://github.com/JavaTheNutt/final_year_project_documentation/blob/master/docs/design_docs/design_doc.md#motivation)
-    * [Goal](https://github.com/JavaTheNutt/final_year_project_documentation/blob/master/docs/design_docs/design_doc.md#goal)
-* [User Analysis](https://github.com/JavaTheNutt/final_year_project_documentation/blob/master/docs/design_docs/design_doc.md#user-analysis)
-    * [Target Audience](https://github.com/JavaTheNutt/final_year_project_documentation/blob/master/docs/design_docs/design_doc.md#target-audience)
-    * [End User Functionality](https://github.com/JavaTheNutt/final_year_project_documentation/blob/master/docs/design_docs/design_doc.md#end-user-functionality)
-* [Methodologies](https://github.com/JavaTheNutt/final_year_project_documentation/blob/master/docs/design_docs/design_doc.md#methodologies)
-* [Requirements Analysis](https://github.com/JavaTheNutt/final_year_project_documentation/blob/master/docs/design_docs/design_doc.md#requirements-analysis)
-    * [Functional Areas](https://github.com/JavaTheNutt/final_year_project_documentation/blob/master/docs/design_docs/design_doc.md#functional-areas)
-        * [Login](https://github.com/JavaTheNutt/final_year_project_documentation/blob/master/docs/design_docs/design_doc.md#login)
-        * [Track Suppliers](https://github.com/JavaTheNutt/final_year_project_documentation/blob/master/docs/design_docs/design_doc.md#track-suppliers)
-        * [Track Finance](https://github.com/JavaTheNutt/final_year_project_documentation/blob/master/docs/design_docs/design_doc.md#track-finance)
-        * [Inventory Management](https://github.com/JavaTheNutt/final_year_project_documentation/blob/master/docs/design_docs/design_doc.md#inventory-management)
-    * [Functional Requirements](https://github.com/JavaTheNutt/final_year_project_documentation/blob/master/docs/design_docs/design_doc.md#functional-requirements)
-* [Architectural Overview](https://github.com/JavaTheNutt/final_year_project_documentation/blob/master/docs/design_docs/design_doc.md#architectural-overview)
-    * [Basic Non-Functional Requirements](https://github.com/JavaTheNutt/final_year_project_documentation/blob/master/docs/design_docs/design_doc.md#basic-non-functional-requirements)
-    * [Application Structure](https://github.com/JavaTheNutt/final_year_project_documentation/blob/master/docs/design_docs/design_doc.md#application-structure)
-* [Appendix](https://github.com/JavaTheNutt/final_year_project_documentation/blob/master/docs/design_docs/design_doc.md#appendix)
-* [References](https://github.com/JavaTheNutt/final_year_project_documentation/blob/master/docs/design_docs/design_doc.md#references)
+* [Project Goal](https://github.com/JavaTheNutt/final_year_project_documentation/blob/master/docs/design_docs/README.md#project-goal)
+    * [Motivation](https://github.com/JavaTheNutt/final_year_project_documentation/blob/master/docs/design_docs/README.md#motivation)
+    * [Goal](https://github.com/JavaTheNutt/final_year_project_documentation/blob/master/docs/design_docs/README.md#goal)
+* [User Analysis](https://github.com/JavaTheNutt/final_year_project_documentation/blob/master/docs/design_docs/README.md#user-analysis)
+    * [Target Audience](https://github.com/JavaTheNutt/final_year_project_documentation/blob/master/docs/design_docs/README.md#target-audience)
+    * [End User Functionality](https://github.com/JavaTheNutt/final_year_project_documentation/blob/master/docs/design_docs/README.md#end-user-functionality)
+* [Methodologies](https://github.com/JavaTheNutt/final_year_project_documentation/blob/master/docs/design_docs/README.md#methodologies)
+* [Requirements Analysis](https://github.com/JavaTheNutt/final_year_project_documentation/blob/master/docs/design_docs/README.md#requirements-analysis)
+    * [Functional Areas](https://github.com/JavaTheNutt/final_year_project_documentation/blob/master/docs/design_docs/README.md#functional-areas)
+        * [Login](https://github.com/JavaTheNutt/final_year_project_documentation/blob/master/docs/design_docs/README.md#login)
+        * [Track Suppliers](https://github.com/JavaTheNutt/final_year_project_documentation/blob/master/docs/design_docs/README.md#track-suppliers)
+        * [Track Finance](https://github.com/JavaTheNutt/final_year_project_documentation/blob/master/docs/design_docs/README.md#track-finance)
+        * [Inventory Management](https://github.com/JavaTheNutt/final_year_project_documentation/blob/master/docs/design_docs/README.md#inventory-management)
+    * [Functional Requirements](https://github.com/JavaTheNutt/final_year_project_documentation/blob/master/docs/design_docs/README.md#functional-requirements)
+* [Architectural Overview](https://github.com/JavaTheNutt/final_year_project_documentation/blob/master/docs/design_docs/README.md#architectural-overview)
+    * [Basic Non-Functional Requirements](https://github.com/JavaTheNutt/final_year_project_documentation/blob/master/docs/design_docs/README.md#basic-non-functional-requirements)
+    * [Application Structure](https://github.com/JavaTheNutt/final_year_project_documentation/blob/master/docs/design_docs/README.md#application-structure)
+* [Appendix](https://github.com/JavaTheNutt/final_year_project_documentation/blob/master/docs/design_docs/README.md#appendix)
+* [References](https://github.com/JavaTheNutt/final_year_project_documentation/blob/master/docs/design_docs/README.md#references)
     
  # Project Goal
 
 ## Motivation
 
-The motivation for this project is to provide a unified data management service for the home. The value of data in the modern age cannot be overstated. The amount of data generated is growing exponentially (it is estimated that by 2020, we will be generating 1.7MB per person per second, globally ([Kumar, 2017]( https://github.com/JavaTheNutt/final_year_project_documentation/blob/master/docs/design_docs/README.md#kumar-v-2017))). The amount money being spent by companies to manage this data is also growing (, says that IT spend in business will grow by 2.4% in 2017, to $3.5 trillion)
+The motivation for this project is to provide a unified data management service for the home. The value of data in the modern age cannot be overstated. The amount of data generated is growing exponentially (it is estimated that by 2020, we will be generating 1.7MB per person per second, globally ([Kumar, 2017]( https://github.com/JavaTheNutt/final\_year\_project\_documentation/blob/master/docs/design\_docs/README.md\#kumar-v-2017))). The amount money being spent by companies to manage this data is also growing (([Gartner, 2017]( https://github.com/JavaTheNutt/final\_year\_project\_documentation/tree/master/docs/design\_docs\#gartner-2017)), says that IT spend in business will grow by 2.4% in 2017, to $3.5 trillion)
 
 A reasonable assumption from these facts would be that as technology becomes more prevalent in our every-day lives, more data will be generated. Another assumption that could be made is that since business spend on managing data is growing exponentially, businesses find some value in successful management of this data. This leads me to my third assumption, that ordinary households can also gain value from the data that they generate, if it is managed properly.
 
