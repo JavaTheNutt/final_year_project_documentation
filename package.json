@@ -10,7 +10,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "appendix": "node docs/design_docs/snippets/appendix",
     "header": "node docs/design_docs/snippets/header",
-    "buildDoc": "npm run header && npm run appendix && node docs/design_docs"
+    "buildDoc": "npm run header && npm run appendix && node docs/design_docs",
+    "copyImg": "ncp docs/design_docs/img docs/design_docs/snippets/appendix/img"
   },
   "repository": {
     "type": "git",
