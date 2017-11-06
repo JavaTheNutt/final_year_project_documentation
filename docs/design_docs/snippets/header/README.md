@@ -1,4 +1,12 @@
+# Home Resource Planner
+## _Initial Design Specification_
 
+Name | Student Number | Email
+-----|----------------|------
+Joe Wemyss | 20068336 | joe.wemyss@javathenutt.com
+
+
+  
 [//]: # (base path https://github.com/JavaTheNutt/final_year_project_documentation/blob/master/docs/design_docs/design_doc.md)
 
 ## Contents
