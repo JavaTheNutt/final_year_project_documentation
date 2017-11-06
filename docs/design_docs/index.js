@@ -15,7 +15,7 @@ const getAppendix = ()=> getReadme('snippets/appendix');
 const stripOldAppendix = doc => doc.substring(0, doc.lastIndexOf('# Appendix') - 1);
 const stripOldHeader = doc => doc.substring(doc.indexOf('# Project Goal'));
 const fetchDesignDoc = () => fs.readFileSync(path.join(__dirname, 'design_doc.md'), 'utf-8');
-const appendHeader   = () => fs.writeFileSync(path.join(__dirname, 'new_design_doc.md'), [getHeader(),
+const appendHeader   = () => fs.writeFileSync(path.join(__dirname, 'README.md'), [getHeader(),
   stripOldAppendix(stripOldHeader(fetchDesignDoc())), getAppendix()].join(' '), 'utf-8');
 appendHeader();
 
