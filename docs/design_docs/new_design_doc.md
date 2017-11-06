@@ -34,7 +34,7 @@ Joe Wemyss | 20068336 | joe.wemyss@javathenutt.com
 
 ## Motivation
 
-The motivation for this project is to provide a unified data management service for the home. The value of data in the modern age cannot be overstated. The amount of data generated is growing exponentially (it is estimated that by 2020, we will be generating 1.7MB per person per second, globally ). The amount money being spent by companies to manage this data is also growing (, says that IT spend in business will grow by 2.4% in 2017, to $3.5 trillion)
+The motivation for this project is to provide a unified data management service for the home. The value of data in the modern age cannot be overstated. The amount of data generated is growing exponentially (it is estimated that by 2020, we will be generating 1.7MB per person per second, globally ([Kumar, 2017]( https://github.com/JavaTheNutt/final\_year\_project\_documentation/blob/master/docs/design\_docs/design\_doc.md\#kumar,-v,-2017))). The amount money being spent by companies to manage this data is also growing (, says that IT spend in business will grow by 2.4% in 2017, to $3.5 trillion)
 
 A reasonable assumption from these facts would be that as technology becomes more prevalent in our every-day lives, more data will be generated. Another assumption that could be made is that since business spend on managing data is growing exponentially, businesses find some value in successful management of this data. This leads me to my third assumption, that ordinary households can also gain value from the data that they generate, if it is managed properly.
 
@@ -329,7 +329,8 @@ I am currently thinking of deploying the first prototype on Heroku as it provide
 For the front-end it matters less, since it will simply be a collection of static files that need to be hosted. My most likely solution for this will be Firebase, which provides static site hosting from Googles edge servers as well as a free SSL cert.
 
 For the database, I am considering hosting the prototype on mLab for simplicity and then migrating to Mongo Atlas for the production version. Mongo Atlas provides far better performance, but requires more configuration to set up.
- 
+
+ 
 #Appendix
 
 ## Figures
@@ -595,4 +596,3 @@ Figure 5--Small Physical Implementation
   URL: https://www.toptal.com/freelance/your-boss-won-t-appreciate-tdd-try-bdd
   
   Accessed On: 03/11/2017
-  

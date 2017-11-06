@@ -20,7 +20,7 @@ Figures
 
 ## Motivation
 
-The motivation for this project is to provide a unified data management service for the home. The value of data in the modern age cannot be overstated. The amount of data generated is growing exponentially (it is estimated that by 2020, we will be generating 1.7MB per person per second, globally ). The amount money being spent by companies to manage this data is also growing (, says that IT spend in business will grow by 2.4% in 2017, to $3.5 trillion)
+The motivation for this project is to provide a unified data management service for the home. The value of data in the modern age cannot be overstated. The amount of data generated is growing exponentially (it is estimated that by 2020, we will be generating 1.7MB per person per second, globally (\[Kumar, 2017\]( https://github.com/JavaTheNutt/final\_year\_project\_documentation/blob/master/docs/design\_docs/design\_doc.md\#kumar,-v,-2017))). The amount money being spent by companies to manage this data is also growing (, says that IT spend in business will grow by 2.4% in 2017, to $3.5 trillion)
 
 A reasonable assumption from these facts would be that as technology becomes more prevalent in our every-day lives, more data will be generated. Another assumption that could be made is that since business spend on managing data is growing exponentially, businesses find some value in successful management of this data. This leads me to my third assumption, that ordinary households can also gain value from the data that they generate, if it is managed properly.
 
@@ -318,22 +318,22 @@ For the database, I am considering hosting the prototype on mLab for simplicity 
 
 # Appendix
 
-![](./img/media/image1.png)
+![](media/image1.png)
 
 Figure 1--Auth Use Case
 
-![](./img/media/image2.png)
+![](media/image2.png)
 
 Figure 2--Conceptual Module Overview
 
-![](./img/media/image3.png)
+![](media/image3.png)
 
 Figure 3--Full Physical Implementation
 
-![](./img/media/image4.png)
+![](media/image4.png)
 
 Figure 4--Mid Physical Implementation
 
-![](./img/media/image5.png)
+![](media/image5.png)
 
 Figure 5--Small Physical Implementation

@@ -10,9 +10,10 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "appendix": "node docs/design_docs/snippets/appendix",
     "header": "node docs/design_docs/snippets/header",
-    "buildDoc": "npm run header && npm run appendix && node docs/design_docs",
+    "buildDoc": "npm run generateMarkdown && npm run header && npm run appendix && node docs/design_docs",
     "copyImg": "npm run delImg && ncp docs/design_docs/img docs/design_docs/snippets/appendix/img",
-    "delImg": "del-cli docs/design_docs/snippets/appendix/img"
+    "delImg": "del-cli docs/design_docs/snippets/appendix/img",
+    "generateMarkdown": " pandoc -s docs/design_docs/Full_Design_Doc.docx --wrap=none --reference-links -t gfm -o docs/design_docs/design_doc.md"
   },
   "repository": {
     "type": "git",
