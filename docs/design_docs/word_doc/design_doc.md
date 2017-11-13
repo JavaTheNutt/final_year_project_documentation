@@ -324,7 +324,7 @@ For the database, I am considering hosting the prototype on mLab for simplicity 
 
 I decided to design my authentication data models first, since they would have a bearing on every other aspect of the application. Since the application will initially use a NoSQL database, a traditional Entity Relationship Diagram would not be sufficient. I decided instead to use a class diagram, to represent the data models that would be used for User Management/Authentication.
 
-![](media/image1.PNG)
+![](./docs/design_docs/word_doc/img/media/image1.PNG)
 
 In order to manage this data correctly, there must be a good flow between system components. To map this flow, it is necessary to create activity and sequence diagrams.
 
@@ -332,38 +332,38 @@ In order to manage this data correctly, there must be a good flow between system
 
 The diagram below shows a high-level overview of the sequence of steps involved in registering a new user.
 
-![](media/image2.PNG)
+![](./docs/design_docs/word_doc/img/media/image2.PNG)
 
 The client part of this sequence of setps can be viewed in more detail in an activity diagram.
 
-![](media/image3.PNG)
+![](./docs/design_docs/word_doc/img/media/image3.PNG)
 
 The server-side process for capturing a new user can also be represented in an activity diagram.
 
-![](media/image4.PNG)
+![](./docs/design_docs/word_doc/img/media/image4.PNG)
 
 # Appendix
 
-![](media/image5.png)
+![](./docs/design_docs/word_doc/img/media/image5.png)
 
 Figure 1--Auth Use Case
 
-![](media/image6.png)
+![](./docs/design_docs/word_doc/img/media/image6.png)
 
 Figure 2--Conceptual Module Overview
 
-![](media/image7.png)
+![](./docs/design_docs/word_doc/img/media/image7.png)
 
 Figure 3--Full Physical Implementation
 
-![](media/image8.png)
+![](./docs/design_docs/word_doc/img/media/image8.png)
 
 Figure 4--Mid Physical Implementation
 
-![](media/image9.png)
+![](./docs/design_docs/word_doc/img/media/image9.png)
 
 Figure 5--Small Physical Implementation
 
-![](media/image1.PNG)
+![](./docs/design_docs/word_doc/img/media/image1.PNG)
 
 Figure 6--User Management Data Model

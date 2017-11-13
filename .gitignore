@@ -2,3 +2,6 @@
 /node_modules/
 /.idea
 /docs/design_docs/~WRL1734.tmp
+/tst.ejs
+/tst.js
+*.vpp.bak*

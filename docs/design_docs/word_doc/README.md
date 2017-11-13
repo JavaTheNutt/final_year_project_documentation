@@ -330,6 +330,32 @@ For the front-end it matters less, since it will simply be a collection of stati
 
 For the database, I am considering hosting the prototype on mLab for simplicity and then migrating to Mongo Atlas for the production version. Mongo Atlas provides far better performance, but requires more configuration to set up.
 
+## Application Design
+
+### Data Modelling
+
+#### Authentication
+
+I decided to design my authentication data models first, since they would have a bearing on every other aspect of the application. Since the application will initially use a NoSQL database, a traditional Entity Relationship Diagram would not be sufficient. I decided instead to use a class diagram, to represent the data models that would be used for User Management/Authentication.
+
+![](./docs/design_docs/word_doc/img/media/image1.PNG)
+
+In order to manage this data correctly, there must be a good flow between system components. To map this flow, it is necessary to create activity and sequence diagrams.
+
+##### Overall Signup Sequence 
+
+The diagram below shows a high-level overview of the sequence of steps involved in registering a new user.
+
+![](./docs/design_docs/word_doc/img/media/image2.PNG)
+
+The client part of this sequence of setps can be viewed in more detail in an activity diagram.
+
+![](./docs/design_docs/word_doc/img/media/image3.PNG)
+
+The server-side process for capturing a new user can also be represented in an activity diagram.
+
+![](./docs/design_docs/word_doc/img/media/image4.PNG)
+
  
 #Appendix
 
